@@ -46,10 +46,10 @@ Replicate slides of the same tissue sample are physically different and shouldn'
 - [Level 1 4x6 256-tiles from 384 slide size](./ptrprocessing/tissue_mosaic_generation_lvl1_384_4x6_256.ipynb)
 - [Level 1 5x5 299-tiles from 299 slide size](./ptrprocessing/tissue_mosaic_generation_lvl1_299_5x5_299.ipynb)
 
-Our method samples tile images along the tissue skeleton. Left image shows the WSI (whole slide image) with green sampling places and the right image shows the cropped tiles. The Figure below is sampled with 6x6 256-sized tiles using 256 slide size.
+Our method samples tile images along the tissue skeleton. The first image shows the WSI (whole slide image) with green sampling places and the second image shows the cropped tiles. The Figure below is sampled with 6x6 256-sized tiles using 256 slide size.
 
 <img src="./img/sampling_256_256.png" height="400" />
-<img src="./img/tiles.png" height="400" />
+<img src="./img/tiles.png" height="300" />
 
 ## Training
 
@@ -87,6 +87,7 @@ We trained our `256`, `299` and `384`  models that we used in the final submissi
 
 ## Inference
 
-Please see our [inference notebook](https://www.kaggle.com/qitvision/panda-r-hm-ai-private-score-0-93) that uses [`256`](https://www.kaggle.com/qitvision/panda-models-256-256-ordinal) and [`384`](https://www.kaggle.com/qitvision/panda-models-384-256-ordinal) models.
+Please see our [inference notebook](https://www.kaggle.com/qitvision/panda-r-hm-ai-private-score-0-93) that uses [`256`](https://www.kaggle.com/qitvision/panda-models-256-256-ordinal) and [`384`](https://www.kaggle.com/qitvision/panda-models-384-256-ordinal) models. This scored 0.930 qwk in the private, and
+0.904 qwk in the public test sets.
 
-[This](https://www.kaggle.com/qitvision/jj-2020-07-21-all-models) is the one we used in the final competition submission. It scored 0.926 qwk in the private, and 0.907 qwk in the public test sets. 
+[The one](https://www.kaggle.com/qitvision/jj-2020-07-21-all-models) that we used in the final competition submission scored 0.926 qwk in the private, and 0.907 qwk in the public test sets. 
